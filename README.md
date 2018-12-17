@@ -2,35 +2,43 @@
 
 After you clone this project, do the following:
 
-go into the project
+```bash
+# go into the project
 cd Vue-Laravel-SPA
 
-create a .env file
+# create a .env file
 cp .env.example .env
 
-install composer dependencies
+# install composer dependencies
 composer update
 
-install npm dependencies
+# install npm dependencies
 npm install
 
-create a local MySQL database (make sure you have MySQL up and running)
+# generate a key for your application
+php artisan key:generate
+
+# generate Server secret for JWT
+php artisan jwt:secret
+
+# create a local MySQL database (make sure you have MySQL up and running)
 mysql -u root
 
-> create database gantt;
+> create database vuespa_db;
 > exit;
 
-add the database connection config to your .env file
+# add the database connection config to your .env file
 DB_CONNECTION=mysql
 DB_DATABASE=gantt
 DB_USERNAME=gantt
 DB_PASSWORD=secret
 
-run the migration files to generate the schema
+# run the migration files to generate the schema
 php artisan migrate
 
-run the seeders 
+# run the seeders 
 php artisan migrate:refresh --seed
 
-run webpack and watch for changes
+# run webpack and watch for changes
 npm run watch
+```
