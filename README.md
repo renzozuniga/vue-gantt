@@ -4,7 +4,7 @@ After you clone this project, do the following:
 
 ```bash
 # go into the project
-cd Vue-Laravel-SPA
+cd vue-gantt
 
 # create a .env file
 cp .env.example .env
@@ -15,16 +15,10 @@ composer update
 # install npm dependencies
 npm install
 
-# generate a key for your application
-php artisan key:generate
-
-# generate Server secret for JWT
-php artisan jwt:secret
-
 # create a local MySQL database (make sure you have MySQL up and running)
 mysql -u root
 
-> create database vuespa_db;
+> create database gantt;
 > exit;
 
 # add the database connection config to your .env file
