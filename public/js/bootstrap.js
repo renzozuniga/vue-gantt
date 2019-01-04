@@ -36137,7 +36137,7 @@ if (token) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Renzo\projects\gantt\resources\js\bootstrap.js */"./resources/js/bootstrap.js");
+module.exports = __webpack_require__(/*! /home/vagrant/projects/gantt/resources/js/bootstrap.js */"./resources/js/bootstrap.js");
 
 
 /***/ })
